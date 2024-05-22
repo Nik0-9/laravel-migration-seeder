@@ -2,8 +2,7 @@
 
 use App\Models\Book;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\HomeController;
-use App\Http\Controllers\BookController;
+use App\Http\Controllers\TrainController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,7 +14,7 @@ use App\Http\Controllers\BookController;
 |
 */
 
-Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/', [TrainController::class, 'index'])->name('home');
 
 
 //buona prassi creare come ULTIMA rotta una fallback
